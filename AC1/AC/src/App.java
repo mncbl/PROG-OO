@@ -4,7 +4,7 @@ public class App {
         metodo();
         bissexto(1900);
         semana(20);
-        ePrimo(7);
+        ePrimo(45);
 
     }
 
@@ -82,16 +82,21 @@ public class App {
         int i;
 
         for (i=2; i < num; i++) {
-            if (num % i == 0) {
+
+            if (num % 1 == 0) {
                 System.out.println(i);
                 System.out.println("nao é primo");
+                break;
 
             }
-
+            else{
+                System.out.println("é primo");
+            }
 
         }
-         System.out.println("é primo");
+
 
         }
 
     }
+
