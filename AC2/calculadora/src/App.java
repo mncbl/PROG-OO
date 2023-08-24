@@ -12,7 +12,19 @@ public class App {
         double resultado;
         System.out.println("diga o primeiro numero");
         x = le.nextDouble();
+
         while (continua.equals("Sim")) {
+            System.out.println("deseja continuar calculando, Sim ou Nao");
+                    continua = le.next();
+                    if (continua.equals("Sim")) {
+
+                    }
+             System.out.println("deseja resetar o  numero ? Sim ou Não");
+                    reset = le.next();
+                    if (reset.equals("Sim")) {
+                        System.out.println("diga o primeiro numero");
+                        x = le.nextDouble();
+                    }
             // colocando as opções da interface
             System.out.println("Escolha a operação:");
             System.out.println("1. Soma");
@@ -31,18 +43,6 @@ public class App {
                     resultado = soma(x, y);
                     System.out.println(resultado);
                     x = resultado;
-                    System.out.println("deseja continuar calculando, Sim ou Não");
-                    continua = le.next();
-                    System.out.println("deseja resetar o  numero ? Sim ou Não");
-                    reset = le.next();
-                    if (reset.equals("Sim")) {
-                        System.out.println("diga o primeiro numero");
-                        x = le.nextDouble();
-                    }
-                    if (continua.equals("Sim")) {
-                        System.out.println("diga a proxima operacao");
-
-                    }
                     break;
 
                 // realiza a subtração
@@ -52,17 +52,7 @@ public class App {
                     resultado = subtrai(x, y);
                     System.out.println(resultado);
                     x = resultado;
-                    System.out.println("deseja continuar calculando, Sim ou Não");
-                    continua = le.next();
-                    System.out.println("deseja resetar o  numero ? Sim ou Não");
-                    reset = le.next();
-                    if (reset.equals("Sim")) {
-                        System.out.println("diga o primeiro numero , pos reset");
-                        x = le.nextDouble();
-                    }
-                    if (continua.equals("Sim")) {
-                        System.out.println("diga a proxima operacao");
-                    }
+
                     break;
 
                 // realiza a multiplicacao
@@ -73,19 +63,9 @@ public class App {
                     resultado = (multiplica(x, y));
                     x = resultado;
                     System.out.println(resultado);
-                    System.out.println("deseja resetar o  numero ? Sim ou Não");
-                    reset = le.next();
-                    if (reset.equals("Sim")) {
-                        System.out.println("diga o primeiro numero");
-                        x = le.nextDouble();
-                    }
 
-                    System.out.println("deseja continuar calculando, Sim ou Nao");
-                    continua = le.next();
-                    if (continua.equals("Sim")) {
-                        System.out.println("diga a proxima operacao");
 
-                    }
+
                     break;
 
                 // realiza a divisao
@@ -96,17 +76,7 @@ public class App {
                     resultado = (divide(x, y));
                     x = resultado;
                     System.out.println(resultado);
-                    System.out.println("deseja resetar o  numero ? Sim ou Não");
-                    reset = le.next();
-                    if (reset.equals("Sim")) {
-                        System.out.println("diga o primeiro numero");
-                        x = le.nextDouble();
-                    }
-                    System.out.println("deseja continuar calculando, Sim ou Não");
-                    continua = le.next();
-                    if (continua.equals("Sim")) {
-                        System.out.println("diga a proxima operacao");
-                    }
+
                     break;
 
                 // encerra o programa
